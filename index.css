@@ -237,7 +237,7 @@ body {
 
 .slot-cont {
     width: 94vw;
-    aspect-ratio: 1130 / 505;
+    aspect-ratio: 1130 / 502;
     position: absolute;
     top: 164.58vw;
     display: flex;
@@ -246,7 +246,7 @@ body {
 }
 
 .slot {
-    aspect-ratio: 1130 / 505;
+    aspect-ratio: 1130 / 502;
     width: 100%;
     position: relative;
 }
