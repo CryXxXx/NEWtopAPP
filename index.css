@@ -25,7 +25,7 @@ body {
     width: 100%;
     align-items: center;
     display: flex;
-    position: relative;
+    position: fixed;
 }
 
 .user-img-cont {
