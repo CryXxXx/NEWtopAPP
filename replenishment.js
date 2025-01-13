@@ -52,7 +52,7 @@ RepPage.addEventListener('click', () => {
 
 
 const DepBut = document.getElementById('deposit');
-RepPage.addEventListener('click', () => {
+DepBut.addEventListener('click', () => {
     openDeposit()
 });
 
