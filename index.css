@@ -139,9 +139,10 @@ body {
 
 
 .ad-cont {
-    width: 94vw;
-    aspect-ratio: 113 / 63;
+    width: 100vw;
+    aspect-ratio: 120 / 63;
     position: absolute;
+    left: 0%;
     top: 23.33vw;
     display: flex;
     align-items: center;
@@ -149,10 +150,11 @@ body {
 }
 
 .ad {
-    aspect-ratio: 113 / 63;
+    aspect-ratio: 120 / 63;
     width: 100%;
     position: relative;
 }
+
 
 .our-games-cont {
     width: 94vw;
