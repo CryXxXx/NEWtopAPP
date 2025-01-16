@@ -40,7 +40,7 @@ const DepBut = document.getElementById('deposit');
 let isAnimating = false; // Счетчик для отслеживания состояния анимации
 
 DepBut.addEventListener('click', () => {
-    /*openDeposit(); // Ваша существующая функция*/
+    openDeposit(); // Ваша существующая функция
 
     if (isAnimating) return; // Если анимация уже идет, выходим из функции
     isAnimating = true; // Устанавливаем состояние анимации в true
