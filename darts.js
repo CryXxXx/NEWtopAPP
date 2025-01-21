@@ -28,7 +28,6 @@ RepPage.addEventListener('click', () => {
 
 
 
-
 const movingCircle = document.getElementById('movingCircle');
 const filled = document.getElementById('filled');
 const sliderContainer = document.querySelector('.slider-container');
@@ -51,6 +50,7 @@ function getCurrentValueIndex(mouseX) {
     return Math.max(0, Math.min(newIndex, 6)); // Изменено на 6
 }
 
+// Обработчики событий для мыши
 movingCircle.addEventListener('mousedown', (event) => {
     isDragging = true;
     document.body.style.cursor = 'grabbing';
@@ -70,10 +70,28 @@ document.addEventListener('mouseup', () => {
     document.body.style.cursor = 'default';
 });
 
+// Обработчики событий для сенсорных устройств
+movingCircle.addEventListener('touchstart', (event) => {
+    isDragging = true;
+    document.body.style.cursor = 'grabbing';
+});
+
+document.addEventListener('touchmove', (event) => {
+    if (isDragging) {
+        const rect = sliderContainer.getBoundingClientRect();
+        const touchX = event.touches[0].clientX - rect.left; // Используем координаты первого касания
+        currentValueIndex = getCurrentValueIndex(touchX);
+        updateSlider();
+    }
+});
+
+document.addEventListener('touchend', () => {
+    isDragging = false;
+    document.body.style.cursor = 'default';
+});
+
 // Инициализация состояния
 updateSlider();
-
-
 
 
 
