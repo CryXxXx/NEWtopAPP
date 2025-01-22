@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="slot.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<div class="back-lobby-cont" id="back-lobby-button">
+    <img src="assets/back-lobby-arrow-gray.png" alt="Image" class="back-lobby-arrow">
+</div>
+<div class="balance-bar">
+    <img src="assets/tether-slot.png" alt="Image" class="tether-purple">
+    <div class="user-balance-cont">
+        <div class="user-balance">666,52</div>
+    </div>
+</div>
+
+<div class="bet-menu-cont">
+    <div class="combinations-cont" id="combinations">
+        <img src="assets/combinations.svg" alt="Image" class="combinations">
+    </div>
+    <div class="bet-amount-cont">
+        <img src="assets/bet-amount.png" alt="Image" class="bet-action">
+    </div>
+    <div class="bet-chooser">
+        <div class="slider-container">
+            <div class="line"></div>
+            <div class="filled" id="filled" style="width: 1.5vw;"></div>
+            <div class="moving-circle" id="movingCircle" draggable="false"></div>
+        </div>
+        <img src="assets/bet-amount-body.svg" alt="Image" class="bet-amount-body">
+        <div class="bet-number-cont">
+            <div class="bet-number"></div>
+            <div class="bet-tether-cont">
+                <img src="assets/bet-tether.png" alt="Image" class="bet-tether">
+            </div>
+        </div>
+        <div class="bet-plus-cont">
+            <img src="assets/bet-plus.svg" alt="Image" class="bet-plus">
+        </div>
+    </div>
+</div>
+
+<div class="bet-button">
+    <img class="def" src="assets/slot-button-sup.svg" alt="Button Sup">
+</div>
+
+<script src="slot.js"></script>
+</body>
+</html>
