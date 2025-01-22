@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="darts.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<div class="back-lobby-cont" id="back-lobby-button">
+    <img src="assets/back-lobby-arrow-gray.png" alt="Image" class="back-lobby-arrow">
+</div>
+<div class="balance-bar">
+    <img src="assets/tether-dice.png" alt="Image" class="tether-purple">
+    <div class="user-balance-cont">
+        <div class="user-balance">666,52</div>
+    </div>
+</div>
+
+
+<div class="bet-choosing-cont">
+    <img src="assets/bet-choosing.png" alt="Image" class="bet-action">
+</div>
+
+<div class="choosing-cont">
+    <div class="option red" onclick="changeImage(this)">
+        <img class="def" src="assets/darts-red-def.svg" alt="Red Dart Default">
+        <img class="sup" src="assets/darts-red-sup.svg" alt="Red Dart Sup" style="opacity: 0;">
+    </div>
+    <div class="option white" onclick="changeImage(this)">
+        <img class="def" src="assets/darts-white-def.svg" alt="White Dart Default">
+        <img class="sup" src="assets/darts-white-sup.svg" alt="White Dart Sup" style="opacity: 0;">
+    </div>
+    <div class="option center" onclick="changeImage(this)">
+        <img class="def" src="assets/darts-center-def.svg" alt="Center Dart Default">
+        <img class="sup" src="assets/darts-center-sup.svg" alt="Center Dart Sup" style="opacity: 0;">
+    </div>
+    <div class="option miss" onclick="changeImage(this)">
+        <img class="def" src="assets/darts-miss-def.svg" alt="Miss Dart Default">
+        <img class="sup" src="assets/darts-miss-sup.svg" alt="Miss Dart Sup" style="opacity: 0;">
+    </div>
+</div>
+    
+<div class="bet-amount-cont">
+    <img src="assets/bet-amount.png" alt="Image" class="bet-action">
+</div>
+
+<div class="bet-chooser">
+    <div class="slider-container">
+        <div class="line"></div>
+        <div class="filled" id="filled" style="width: 1.5vw;"></div>
+        <div class="moving-circle" id="movingCircle" draggable="false"></div>
+    </div>
+    <img src="assets/bet-amount-body.svg" alt="Image" class="bet-amount-body">
+    <div class="bet-number-cont">
+        <div class="bet-number"></div>
+        <div class="bet-tether-cont">
+            <img src="assets/bet-tether.png" alt="Image" class="bet-tether">
+        </div>
+    </div>
+    <div class="bet-plus-cont">
+        <img src="assets/bet-plus.svg" alt="Image" class="bet-plus">
+    </div>
+</div>
+
+<div class="bet-button">
+    <img class="def" src="assets/darts-button-def.svg" alt="Button Default">
+    <img class="sup" src="assets/darts-button-sup.svg" alt="Button Sup" style="opacity: 0;">
+</div>
+
+<script src="darts.js"></script>
+</body>
+</html>
