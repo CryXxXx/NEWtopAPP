@@ -234,21 +234,21 @@ body {
 .moving-circle::before {
     content: "";
     position: absolute;
-    top: -1.2vw;
-    left: -1.2vw;
-    width: 4.73vw;
-    height: 4.73vw;
+    top: -2vw;
+    left: -2vw;
+    width: 6.33vw;
+    height: 6.33vw;
     border-radius: 50%;
     background-color: rgba(118, 102, 196, 0);
     transition: background-color 0.2s ease, transform 0.2s ease;
     z-index: -1;
-    transform: scale(0.5);
+    transform: scale(0.2);
 }
 
 
 .moving-circle.dragging::before {
     background-color: rgba(118, 102, 196, 0.4);
-    transform: scale(1);
+    transform: scale(0.75);
 }
 
 .bet-number-cont {
