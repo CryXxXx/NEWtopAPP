@@ -86,6 +86,17 @@ updateSlider();
 
 
 
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    
+    // Уменьшаем непрозрачность до нуля
+    loader.style.opacity = '0'; 
+    
+    // Скрываем элемент после завершения анимации
+    loader.addEventListener('transitionend', () => {
+        loader.style.display = 'none'; // Скрываем элемент
+    });
+});
 
 
 
