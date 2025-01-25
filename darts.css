@@ -42,7 +42,7 @@ body {
 
 
 
-.animation {
+#apng-container {
     aspect-ratio: 1 / 1;
     position: absolute;
     width: 83vw;
@@ -53,6 +53,12 @@ body {
     justify-content: center;
 }
 
+/* Стили для изображения */
+#myAPNG {
+    width: 100%; /* Автоматическая ширина */
+    aspect-ratio: 1 / 1;
+    position: relative;
+}
 
 
 
