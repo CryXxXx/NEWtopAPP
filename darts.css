@@ -42,7 +42,16 @@ body {
 
 
 
-
+.animation {
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    width: 83vw;
+    left: 8.5vw;
+    top: 9.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
