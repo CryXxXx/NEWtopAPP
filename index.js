@@ -131,7 +131,7 @@ function when_page_start() {
 
 
 
-
+```
 function place_coef() {
     
     fetch("https://hakqx8-176-118-32-227.ru.tuna.am/get_last_game", {
@@ -154,7 +154,7 @@ function place_coef() {
     });
 }
 
-
+```
 
 
 
