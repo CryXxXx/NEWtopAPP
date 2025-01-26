@@ -13,6 +13,11 @@ document.addEventListener('touchstart', (e) => {
 
 
 
+const imageWrapper = document.querySelector('.image-wrapper');
+
+imageWrapper.addEventListener('contextmenu', (event) => {
+    event.preventDefault(); // Останавливает стандартное поведение контекстного меню
+});
 
 
 
