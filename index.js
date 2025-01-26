@@ -134,7 +134,7 @@ function when_page_start() {
 
 function place_coef() {
     
-    fetch("https://cdb2yy-176-118-32-227.ru.tuna.am/get_last_game", {
+    fetch("https://t87q6l-176-118-32-227.ru.tuna.am/get_last_game", {
     method: 'GET', // Указываем метод GET
     // Убираем заголовок Content-Type
 })
