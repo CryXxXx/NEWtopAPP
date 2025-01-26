@@ -39,6 +39,7 @@ body {
     height: 100%;
     background-color: #0F0F0F;
     opacity: 0;
+    display: block;
 }
 
 
