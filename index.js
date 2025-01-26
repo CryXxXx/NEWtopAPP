@@ -113,7 +113,7 @@ SlotPage.addEventListener('click', () => {
 
 
 
-/*
+
 
 window.addEventListener('load', when_page_start());
 function when_page_start() {
@@ -134,7 +134,7 @@ function when_page_start() {
 
 function place_coef() {
     
-    fetch("http://127.0.0.1:5000/get_last_game", {
+    fetch("https://hakqx8-176-118-32-227.ru.tuna.am/get_last_game", {
         method: 'GET', // Указываем метод GET
         headers: {
             'Content-Type': 'application/json' // Указываем тип контента (необязательно для GET-запроса)
