@@ -201,7 +201,6 @@ body {
     aspect-ratio: 120 / 63;
     width: 100%;
     position: relative;
-    pointer-events: none;
 }
 
 .our-games-cont {
