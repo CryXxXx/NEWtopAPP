@@ -33,15 +33,6 @@ body {
 }
 
 
-.data-protector {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #0F0F0F;
-    opacity: 0;
-    display: block;
-}
-
 
 
 .loader {
