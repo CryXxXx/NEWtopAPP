@@ -135,23 +135,21 @@ function when_page_start() {
 function place_coef() {
     
     fetch("https://hakqx8-176-118-32-227.ru.tuna.am/get_last_game", {
-        method: 'GET', // Указываем метод GET
-        headers: {
-            'Content-Type': 'application/json' // Указываем тип контента (необязательно для GET-запроса)
-        },
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json(); // Преобразуем ответ в JSON
-    })
-    .then(data => {
-        updateGames(data); // Обработка полученных данных
-    })
-    .catch((error) => {
-        console.error('Ошибка:', error);
-    });
+    method: 'GET', // Указываем метод GET
+    // Убираем заголовок Content-Type
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.json(); // Преобразуем ответ в JSON
+})
+.then(data => {
+    updateGames(data); // Обработка полученных данных
+})
+.catch((error) => {
+    console.error('Ошибка:', error);
+});
 }
 
 
