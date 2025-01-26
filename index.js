@@ -45,14 +45,16 @@ const loader = document.getElementById('loader');
 
 
 
+
+
 window.addEventListener('load', () => {
     anime({
-        targets: '#loader',
-        opacity: 0,
-        duration: 500,
-        easing: 'easeInOutQuad',
+        targets: loader,
+        opacity: [1, 0],
+        duration: 1000,
+        easing: 'easeInOutSine',
         complete: () => {
-            document.getElementById('loader').style.display = 'none';
+            loader.style.display = 'none'; // Убираем элемент после анимации
         }
     });
 });
@@ -74,11 +76,6 @@ DicePage.addEventListener('click', () => {
 SlotPage.addEventListener('click', () => {
     window.location.href = 'slot.html';
 });
-
-
-
-
-
 
 
 
