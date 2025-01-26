@@ -33,16 +33,21 @@ body {
 }
 
 .loader {
-    position: fixed; /* Фиксированное положение */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* Полная ширина */
-    height: 100vh; /* Полная высота */
-    background-color: #0F0F0F; /* Цвет перекрытия */
-    opacity: 1; /* Изначальная непрозрачность */
-    z-index: 9999; /* Убедитесь, что элемент будет сверху */
+    width: 100vw;
+    height: 100vh;
+    background-color: #0F0F0F;
+    opacity: 1;
+    z-index: 1000;
+    display: block;
 }
 
+.loader.off {
+    display: none;
+}
+  
 
 
 
