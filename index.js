@@ -35,6 +35,7 @@ function openSupport() {
 
 
 
+
 const DicePage = document.getElementById('dice-page');
 const SlotPage = document.getElementById('slot-page');
 const DartsPage = document.getElementById('darts-page');
@@ -49,14 +50,15 @@ const loader = document.getElementById('loader');
 
 window.addEventListener('load', () => {
     anime({
-        targets: loader,
+        targets: '.loader',
         opacity: [1, 0],
-        duration: 1000,
-        easing: 'easeInOutSine',
+        duration: 800,
+        delay: 800,
+        easing: 'easeInOutExpo',
         complete: () => {
-            loader.style.display = 'none'; // Убираем элемент после анимации
-        }
-    });
+          loader.classList.add('off');
+        },
+      });
 });
 
 
@@ -66,7 +68,16 @@ RepPage.addEventListener('click', () => {
 
 
 DartsPage.addEventListener('click', () => {
-    window.location.href = 'darts.html';
+    loader.classList.remove('off');
+    anime({
+        targets: '.loader',
+        opacity: [0, 1],
+        duration: 800,
+        easing: 'easeInOutExpo',
+        complete: () => {
+          window.location.href = 'darts.html';
+        },
+      });
 });
 
 DicePage.addEventListener('click', () => {
